@@ -11,7 +11,15 @@
 ;;;;
 
 ;; solarized-dark
-(load-theme 'solarized-dark t)
+(load-theme 'sanityinc-solarized-dark t)
+
+;; powerline
+(require 'powerline)
+(powerline-default-theme)
+(powerline-raw mode-line-mule-info nil 'l) ; improve performance
+
+;; yascroll
+;;(global-yascroll-bar-mode 1)
 
 ;;;;
 ;;;; Cursor

@@ -36,6 +36,25 @@
 (add-hook 'python-mode-hook 'anaconda-mode)
 
 ; python mode handling
-(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+(require 'jedi-core)
+(setq jedi:complete-on-dot t)
+(setq jedi:use-shortcuts t)
+(add-hook 'python-mode-hook 'jedi:setup)
+;(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+
+;;;;
+;;;; Syntax
+;;;;
+;; smartparens
+(require 'smartparens-config)
+(add-hook 'c-mode-hook #'smartparens-mode)
+(add-hook 'python-mode #'smartparens-mode)
+(add-hook 'c++-mode-hook #'smartparens-mode)
+
+;;;;
+;;;; AutoComplete
+;;;;
+
+(ac-config-default)
 
 (provide 'editor)

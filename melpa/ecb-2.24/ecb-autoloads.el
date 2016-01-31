@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "ecb" "ecb.el" (22185 46521 238798 74000))
+;;;### (autoloads nil "ecb" "ecb.el" (22190 20853 830598 762000))
 ;;; Generated autoloads from ecb.el
 
 (autoload 'ecb-activate "ecb" "\
@@ -33,8 +33,8 @@ exist.
 
 ;;;***
 
-;;;### (autoloads nil "ecb-help" "ecb-help.el" (22185 46521 254798
-;;;;;;  73000))
+;;;### (autoloads nil "ecb-help" "ecb-help.el" (22190 20853 834598
+;;;;;;  588000))
 ;;; Generated autoloads from ecb-help.el
 
 (autoload 'ecb-show-help "ecb-help" "\
@@ -60,7 +60,7 @@ HTML-online-documentation is not included.
 ;;;;;;  "ecb-mode-line.el" "ecb-multiframe.el" "ecb-navigate.el"
 ;;;;;;  "ecb-pkg.el" "ecb-semantic-wrapper.el" "ecb-speedbar.el"
 ;;;;;;  "ecb-tod.el" "ecb-upgrade.el" "ecb-util.el" "ecb-winman-support.el"
-;;;;;;  "silentcomp.el" "tree-buffer.el") (22185 46522 55683 44000))
+;;;;;;  "silentcomp.el" "tree-buffer.el") (22190 20853 924872 735000))
 
 ;;;***
 

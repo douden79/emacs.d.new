@@ -7,8 +7,9 @@
 ;;---------------~------------------~----------------------~-----------
 ;; stable package archives
 ;;-------------------------~-------------------------~-----------------
-(setq package-archives '(("melpa-stable" . "http://stable.melpa.org/packages/")))
-       
+(setq package-archives '(("melpa-stable" . "http://stable.melpa.org/packages/")
+			 ("gnu" . "https://elpa.gnu.org/packages/")
+			 ("marmalade" . "https://marmalade-repo.org/packages/")))
 ;; set package-user-dir to be relative to Knuth install path
 (setq package-user-dir (expand-file-name "melpa" knuth-dir))
 (package-initialize)
@@ -31,10 +32,15 @@
     highlight-symbol
     hl-todo
     ;;;; code complete
-    ;; autopair
+    auto-complete	; http://auto-complete.org/doc/manual.html manual
     ;;;; Language
     ;; python
-    jedi
+    company-jedi
+    ;;;; UI
+    powerline
+    rainbow-delimiters
+    magit
+    smartparens
     )
   "A list of packages to ensure are installed at launch.")
 
@@ -73,7 +79,6 @@ Missing packages are installed automatically."
 
 (defun knuth-list-foreign-packages ()
   "Browse third-party packages not bundled with Knuth.
-
 Behaves similarly to `package-list-packages', but shows only the packages that
 are installed and are not in `knuth-packages'.  Useful for
 removing unwanted packages."

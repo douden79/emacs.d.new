@@ -1,0 +1,34 @@
+((("jedi:complete" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("jedi:setup" .
+   [0 0 0 0 2 0 0 0 0 0])
+  ("python-mode-hook" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("setq" .
+   [3 0 0 0])
+  ("require" .
+   [2 0 0 0 0 0 0])
+  ("add-hook" .
+   [3 0 0 1 0 1 0 0])
+  ("c-mode-hook" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("python-mode" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("smartparens" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("smartparens-mode" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("c++-mode" .
+   [0 0 0 0 0 0 1 0])
+  ("c++-mode-hook" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("jedi-core" .
+   [1 0 0 0 0 0 0 0 0])
+  ("jedi:use-shortcuts" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("add-to-list" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("company-backends" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("company-jedi" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])))
