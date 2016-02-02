@@ -1,7 +1,6 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;                     Edit                          ;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
+;;--------------------------------~-----------------------~-------------------------
+;;                         Editor's Settings
+;;--------------------------------~-----------------------~-------------------------
 ;;;;
 ;;;; Encoding
 ;;;;
@@ -29,18 +28,29 @@
 ;;;;
 
 ;; Python env
-; company-anaconda
-(eval-after-load "company"
-  '(progn
-     (add-to-list 'company-backends 'company-anaconda)))
-(add-hook 'python-mode-hook 'anaconda-mode)
+; using elpy Deault
+(elpy-enable)
 
-; python mode handling
-(require 'jedi-core)
-(setq jedi:complete-on-dot t)
-(setq jedi:use-shortcuts t)
-(add-hook 'python-mode-hook 'jedi:setup)
-;(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+; flycheck realtime debugging.
+(when (require 'flycheck nil t)
+  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+  (add-hook 'elpy-mode-hook 'flycheck-mode))
+
+; py-autopep8
+(require 'py-autopep8)
+(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
+
+; elpy mode hook
+(add-hook 'elpy-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode t)
+            (setq tab-width 4)))
+
+; Eldoc
+(add-hook 'elpy-mode-hook 'eldoc-mode)
+
+; Syntax checking
+;(add-hook 'elpy-mode-hook 'flymake-python-pyflaskes-load)
 
 ;;;;
 ;;;; Syntax

@@ -7,9 +7,11 @@
 ;;---------------~------------------~----------------------~-----------
 ;; stable package archives
 ;;-------------------------~-------------------------~-----------------
-(setq package-archives '(("melpa-stable" . "http://stable.melpa.org/packages/")
-			 ("gnu" . "https://elpa.gnu.org/packages/")
-			 ("marmalade" . "https://marmalade-repo.org/packages/")))
+(setq package-archives '(("melpa-stable" . "http://stable.melpa.org/packages/")))
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+;(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+                         
 ;; set package-user-dir to be relative to Knuth install path
 (setq package-user-dir (expand-file-name "melpa" knuth-dir))
 (package-initialize)
@@ -31,16 +33,21 @@
     ;;;; ui and etc
     highlight-symbol
     hl-todo
-    ;;;; code complete
+    ;-------- Code Complete ---------
     auto-complete	; http://auto-complete.org/doc/manual.html manual
-    ;;;; Language
+    ;-------- Language --------
     ;; python
-    company-jedi
-    ;;;; UI
+    elpy
+    py-autopep8
+    pyflakes
+    ;-------- UI --------
     powerline
     rainbow-delimiters
     magit
     smartparens
+    ;-------- Deault --------
+    better-defaults
+    linum
     )
   "A list of packages to ensure are installed at launch.")
 
