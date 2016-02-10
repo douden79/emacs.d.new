@@ -1,0 +1,19 @@
+
+;; ----- smex-history -----
+(
+ list-packages
+ ecb-activate
+ ecb-customize
+ cedet-version
+ cd
+ 5x5
+ arp
+)
+
+;; ----- smex-data -----
+(
+ (cedet-version . 1)
+ (ecb-customize . 1)
+ (list-packages . 3)
+ (ecb-activate . 1)
+)

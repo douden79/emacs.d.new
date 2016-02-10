@@ -1,7 +1,0 @@
-* TODO : Emacs Envirement setting under agender and issue.
-
-- [ ] C/C++ install irony mode. 
-- [ ] python mode
-- [ ] linux kernel indentation K&R style.
-- [ ] aclang compile reference to youtoube irony mode.
-- [ ] set mark shortkey.

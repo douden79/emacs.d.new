@@ -1,6 +1,6 @@
-;;--------------------------------~-----------------------~-------------------------
-;;                         Editor's Settings
-;;--------------------------------~-----------------------~-------------------------
+;+--------------------------------~-----------------------~-------------------------+
+;|                         Editor's Settings                                        |
+;+--------------------------------~-----------------------~-------------------------+
 ;;;;
 ;;;; Encoding
 ;;;;
@@ -27,30 +27,9 @@
 ;;;; Language
 ;;;;
 
+;+----------------------------------------
 ;; Python env
-; using elpy Deault
-(elpy-enable)
-
-; flycheck realtime debugging.
-(when (require 'flycheck nil t)
-  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
-  (add-hook 'elpy-mode-hook 'flycheck-mode))
-
-; py-autopep8
-(require 'py-autopep8)
-(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
-
-; elpy mode hook
-(add-hook 'elpy-mode-hook
-          (lambda ()
-            (setq indent-tabs-mode t)
-            (setq tab-width 4)))
-
-; Eldoc
-(add-hook 'elpy-mode-hook 'eldoc-mode)
-
-; Syntax checking
-;(add-hook 'elpy-mode-hook 'flymake-python-pyflaskes-load)
+;+----------------------------------------
 
 ;;;;
 ;;;; Syntax
@@ -66,5 +45,55 @@
 ;;;;
 
 (ac-config-default)
+
+;+----------------------------------------
+;; C++
+;+----------------------------------------
+
+
+;+----------------------------------------
+;| code navigation and auto complete
+;+----------------------------------------
+;; auto complete
+(require 'auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
+; auto complete c header
+(defun my:ac-c-header-init ()
+  (require 'auto-complete-c-headers)
+  (add-to-list 'ac-sources 'ac-source-c-headers)
+  (add-to-list 'achead:include-directories '"/usr/include/c++/4.8",
+               '"/usr/include/x86_64-linux-gnu/c++/4.8",
+               '"/usr/include/c++/4.8/backward",
+               '"/usr/lib/gcc/x86_64-linux-gnu/4.8/include",
+               '"/usr/local/include",
+               '"/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed",
+               '"/usr/include/x86_64-linux-gnu",
+               '"/usr/include"
+               ))
+
+;; ac header default enable
+(add-hook 'c++-mode-hook 'my:ac-c-header-init)
+(add-hook 'c-mode-hook 'my:ac-c-header-init)
+
+;; yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)
+
+;+----------------------------------------
+;|          Edit
+;+----------------------------------------
+; iedit global edit
+(define-key global-map (kbd "C-c ;") 'iedit-mode)
+
+;+---------------------------
+;|     Error
+;+---------------------------
+;; must install ecb 20140820 version
+;ecb error
+(setq ecb-examples-bufferinfo-buffer-name nil)
+; stack-trace-on-error
+(setq stack-trace-on-error t)
+(setq ecb-version-check nil)
 
 (provide 'editor)

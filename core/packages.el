@@ -29,7 +29,7 @@
     helm-gtags
     helm-cscope
     ;;;; ide
-    ecb
+    ecb-snapshot
     ;;;; ui and etc
     highlight-symbol
     hl-todo
@@ -47,6 +47,7 @@
     smartparens
     ;-------- Deault --------
     better-defaults
+    iedit
     linum
     )
   "A list of packages to ensure are installed at launch.")

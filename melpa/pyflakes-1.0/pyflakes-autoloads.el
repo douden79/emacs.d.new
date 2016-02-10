@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "pyflakes" "pyflakes.el" (22193 2430 878986
-;;;;;;  396000))
+;;;### (autoloads nil "pyflakes" "pyflakes.el" (22203 23162 754168
+;;;;;;  631000))
 ;;; Generated autoloads from pyflakes.el
 
 (autoload 'pyflakes "pyflakes" "\
