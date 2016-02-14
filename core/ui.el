@@ -11,7 +11,8 @@
 ;;;;
 
 ;; solarized-dark
-(load-theme 'sanityinc-solarized-dark t)
+;(load-theme 'sanityinc-solarized-dark t)
+(load-theme 'ample-flat t)
 
 ;; powerline
 (require 'powerline)

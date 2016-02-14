@@ -1,19 +1,25 @@
 
 ;; ----- smex-history -----
 (
+ dired
+ load-theme
+ shell-mode
  list-packages
+ compile
+ minimap-create
  ecb-activate
- ecb-customize
- cedet-version
- cd
- 5x5
- arp
 )
 
 ;; ----- smex-data -----
 (
  (cedet-version . 1)
  (ecb-customize . 1)
- (list-packages . 3)
+ (list-packages . 6)
  (ecb-activate . 1)
+ (ecb-toggle-compile-window . 1)
+ (minimap-create . 2)
+ (compile . 1)
+ (dired . 2)
+ (shell-mode . 1)
+ (load-theme . 2)
 )

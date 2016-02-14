@@ -2,40 +2,35 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/babel/.emacs.d/melpa/" . "ecb-20140215.114/")
  ("/home/babel/.emacs.d/" . "core/")
  ("/home/babel/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/babel/.emacs.d/core/"
  "/home/babel/"
  "/home/babel/.emacs.d/"
- "/home/babel/.emacs.d/melpa/ecb-20140215.114/"
- "/home/babel/.emacs.d/core/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "ui.el"
+ "packages.el"
+ "editor.el"
+ "core.el"
  "test.cpp"
  "init.el"
- "ecb-layout-defs.el"
- "editor.el"
+ "hello.cpp"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/babel/" (22203 31802 482444 462000) ".gconf/" "Pictures/" "#test.cpp#" "examples.desktop" "./" "install_numix.sh" ".dropbox/" ".compiz/" ".gnupg/" "install_emacs.sh" ".wine/" ".xsession-errors" "test.cpp" ".PlayOnLinux/" ".bash_logout" ".ICEauthority" "../" "Dropbox/" ".emacs.d/" "python_install_for_ubuntu14.04" "Templates/" "emacs-24.5.tar.gz" "Downloads/" "PlayOnLinux's virtual drives/" ".ecb-tip-of-day.el" ".pip/" "Public/" ".Xauthority" ".cache/" ".dropbox-dist/" ".xsession-errors.old" ".profile" ".bashrc" ".config/" "Music/" "Desktop/" ".dmrc" ".bash_history" "emacs-24.5/" "Videos/" ".mozilla/" "Documents/" ".local/")
+ ("/home/babel/.emacs.d/core/" (22208 39138 368594 681000) "./" "ui.el" "../" "core.el" "keybindings.el" "packages.el" "editor.el")
 
- ("/home/babel/.emacs.d/core/" (22203 31591 858437 738000) "./" "ui.el" "../" "core.el" "keybindings.el" "packages.el" "editor.el")
+ ("/home/babel/.emacs.d/" (22208 39139 532594 647000) ".python-environments/" "auto-save-list/" "./" "../" "core/" "init.el" "ido.last" "backups/" "places" "session.101a8c3c6d5cb51aa1145537996423240000000019070048" "melpa/" "snippets/" "smex-items" "ac-comphist.dat" ".git/")
 
- ("/home/babel/.emacs.d/" (22203 31329 314429 356000) ".python-environments/" "auto-save-list/" "./" "../" "core/" "init.el" "ido.last" "backups/" "places" "melpa/" "snippets/" "smex-items" "ac-comphist.dat" ".git/")
-
- ("/home/babel/.emacs.d/melpa/ecb-20140215.114/" (22203 30235 330394 429000) "ecb-help.elc" "ecb-semantic.elc" "ecb-compilation.elc" "ecb-cedet-wrapper.elc" "ecb-winman-support.el" "silentcomp.el" "./" "ecb-autoloads.el" "ecb.elc" "ecb.info-2" "ecb-images/" "ecb-examples.elc" "ecb-cycle.el" "ecb-mode-line.el" "ecb-autogen.elc" "ecb-multiframe.elc" "ecb-advice-test.elc" "ecb-pkg.el" "ecb-multiframe.el" "ecb-upgrade.el" "ecb-navigate.elc" "ecb-symboldef.el" "ecb-face.el" "ecb-util.el" "ecb-jde.el" "ecb-method-browser.elc" "../" "tree-buffer.elc" "dir" "ecb-help.el" "ecb-analyse.el" "ecb-method-browser.el" "ecb-tod.el" "ecb-common-browser.el" "ecb-compatibility.el" "ecb-create-layout.el" "ecb-layout-defs.elc" "ecb-tod.elc" "ecb-layout.el" "ecb-face.elc" "ecb-speedbar.elc" "ecb-file-browser.el" "ecb-layout.elc" "ecb-eshell.el" "ecb-advice-test.el" "ecb-jde.elc" "ecb-upgrade.elc" "ecb-semantic-wrapper.el" "silentcomp.elc" "ecb-autogen.el" "ecb-buffertab.el" "tree-buffer.el" "ecb-cycle.elc" "ecb-common-browser.elc" "ecb.info-3" "ecb.info-1" "ecb-buffertab.elc" "ecb-speedbar.el" "ecb-file-browser.elc" "ecb-semantic-wrapper.elc" "ecb-compatibility.elc" "ecb-eshell.elc" "ecb-examples.el" "ecb-compilation.el" "ecb2/" "ecb.el" "ecb-winman-support.elc" "ecb-analyse.elc" "ecb-navigate.el" "ecb-mode-line.elc" "ecb-layout-defs.el" "ecb-create-layout.elc" "ecb-symboldef.elc" "ecb-semantic.el" "ecb-cedet-wrapper.el" "ecb-util.elc" "ecb.info")
-
- ("/home/babel/.emacs.d/melpa/" (22203 25842 234254 176000) "with-editor-20160128.1201/" "color-theme-sanityinc-solarized-20150803.1420/" "./" "cedet-1.1/" "xcscope-20160201.1926/" "async-20160108.1249/" "swiper-20160209.847/" "powerline-20151008.1449/" "archives/" "popup-20151222.1339/" "helm-cscope-20150609.649/" "../" "yasnippet-20160131.948/" "find-file-in-project-20151216.1850/" "pyvenv-20160108.28/" "dash-20151216.1315/" "smartparens-20160208.1318/" "git-commit-20160130.649/" "better-defaults-20160127.2318/" "ecb-20140215.114/" "ecb-snapshot-20120830/" "company-20160206.308/" "highlight-indentation-20150307.208/" "elpy-20160131.118/" "highlight-symbol-20160102.1209/" "auto-complete-20160107.8/" "gnupg/" "magit-20160210.555/" "helm-core-20160203.219/" "smex-20151212.1409/" "helm-20160209.2117/" "helm-gtags-20160202.503/" "pyflakes-1.0/" "rainbow-delimiters-20150320.17/" "py-autopep8-20151231.614/" "hl-todo-20151025.1220/" "magit-popup-20160130.649/")
-
- ("/home/babel/Desktop/" (22203 19996 146536 126000) "./" "../" "PDFXCview.desktop" "PDF-Viewer.lnk")
+ ("/home/babel/" (22208 36238 552680 361000) ".gconf/" "Pictures/" "#test.cpp#" "examples.desktop" "./" "install_numix.sh" ".dropbox/" ".compiz/" ".gnupg/" "install_emacs.sh" ".wine/" ".xsession-errors" "test.cpp" ".PlayOnLinux/" ".bash_logout" ".ICEauthority" "../" "Dropbox/" ".emacs.d/" "python_install_for_ubuntu14.04" "Templates/" "emacs-24.5.tar.gz" "Downloads/" "PlayOnLinux's virtual drives/" ".ecb-tip-of-day.el" ".pip/" "Public/" ".Xauthority" ".cache/" ".dropbox-dist/" "hello.cpp" ".xsession-errors.old" ".profile" ".bashrc" ".gitconfig" ".xinputrc" ".config/" "Music/" "Desktop/" ".dmrc" ".bash_history" "emacs-24.5/" "Videos/" ".pki/" ".mozilla/" "Documents/" ".local/")
 )
 
 ;; ----- ido-unc-hosts-cache -----

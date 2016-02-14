@@ -49,9 +49,10 @@ by knuth.")
  '(current-language-environment "Korean")
  '(custom-safe-themes
    (quote
-    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "885ef8634f55df1fa067838330e3aa24d97be9b48c30eadd533fde4972543b55" default)))
+    ("ad950f1b1bf65682e390f3547d479fd35d8c66cafa2b8aa28179d78122faa947" "12b4427ae6e0eef8b870b450e59e75122d5080016a9061c9696959e50d578057" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "885ef8634f55df1fa067838330e3aa24d97be9b48c30eadd533fde4972543b55" default)))
  '(ecb-layout-name "left-dir-plus-speedbar")
  '(ecb-options-version "2.40")
+ '(ecb-source-path (quote (("/" "/"))))
  '(ecb-windows-width 0.25)
  '(prefer-coding-system (quote utf-8))
  '(size-indication-mode t)

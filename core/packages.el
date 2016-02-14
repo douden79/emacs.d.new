@@ -45,10 +45,12 @@
     rainbow-delimiters
     magit
     smartparens
+    ample-theme
     ;-------- Deault --------
     better-defaults
     iedit
     linum
+    minimap
     )
   "A list of packages to ensure are installed at launch.")
 
