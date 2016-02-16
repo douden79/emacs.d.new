@@ -34,7 +34,8 @@
     highlight-symbol
     hl-todo
     ;-------- Code Complete ---------
-    auto-complete	; http://auto-complete.org/doc/manual.html manual
+    auto-complete
+    yasnippet
     ;-------- Language --------
     ;; python
     ;elpy
