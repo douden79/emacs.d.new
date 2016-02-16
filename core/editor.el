@@ -86,6 +86,17 @@
 ; iedit global edit
 (define-key global-map (kbd "C-c ;") 'iedit-mode)
 
+; Indexing
+(require 'helm-config)
+(require 'helm-gtags)
+
+;; Enable helm-gtags-mode
+(add-hook 'c-mode-hook 'helm-gtags-mode)
+(add-hook 'c++-mode-hook 'helm-gtags-mode)
+(add-hook 'asm-mode-hook 'helm-gtags-mode)
+(add-hook 'php-mode-hook 'helm-gtags-mode)
+(add-hook 'python-mode-hook 'helm-gtags-mode)
+
 ;+---------------------------
 ;|     Error
 ;+---------------------------

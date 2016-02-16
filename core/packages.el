@@ -29,7 +29,7 @@
     helm-gtags
     helm-cscope
     ;;;; ide
-    ecb-snapshot
+    ecb
     ;;;; ui and etc
     highlight-symbol
     hl-todo
@@ -37,9 +37,9 @@
     auto-complete	; http://auto-complete.org/doc/manual.html manual
     ;-------- Language --------
     ;; python
-    elpy
-    py-autopep8
-    pyflakes
+    ;elpy
+    ;py-autopep8
+    ;pyflakes
     ;-------- UI --------
     powerline
     rainbow-delimiters
