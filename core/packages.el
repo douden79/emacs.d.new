@@ -35,6 +35,8 @@
     hl-todo
     ;-------- Code Complete ---------
     auto-complete
+    auto-complete-c-headers
+    auto-complete-clang
     yasnippet
     ;-------- Language --------
     ;; python
@@ -52,6 +54,11 @@
     iedit
     linum
     minimap
+    ;; --------------------- verity edit
+    ; clang
+    ;;--------------- Edit
+    multiple-cursors
+    ; 
     )
   "A list of packages to ensure are installed at launch.")
 
